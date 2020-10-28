@@ -31,6 +31,7 @@ public class SecKillController {
 
     @GetMapping
     @ResponseBody
+
     public JsonResult secKill(String userName) {
         if (hasGoods) {
             long afterDec = redisTemplate.opsForValue().decrement(KEY);
