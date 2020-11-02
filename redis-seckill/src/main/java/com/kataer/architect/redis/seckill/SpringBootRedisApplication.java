@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @MapperScan("com.kataer.architect.redis.seckill.mapper")
 public class SpringBootRedisApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(SpringBootRedisApplication.class, args);
     }

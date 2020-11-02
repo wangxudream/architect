@@ -13,7 +13,6 @@ import org.springframework.context.annotation.Configuration;
 //@Component Configuration注解中包含Component
 @Configuration
 public class FoodFactory {
-
     @Bean(name = "food")
     public Food createFood() {
         return new Food();
