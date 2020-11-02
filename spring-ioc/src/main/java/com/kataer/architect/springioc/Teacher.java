@@ -31,6 +31,7 @@ public class Teacher implements BeanNameAware, InitializingBean, DisposableBean,
 
     //BeanPostProcessor
     @Override
+
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         log.info(">>>>>>>>>>>>postProcessBeforeInitialization");
         return bean;
