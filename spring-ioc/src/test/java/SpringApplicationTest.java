@@ -3,7 +3,6 @@ import com.kataer.architect.springioc.SpringIOCApplication;
 import com.kataer.architect.springioc.Student;
 import com.kataer.architect.springioc.Teacher;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -71,5 +70,7 @@ public class SpringApplicationTest {
         Teacher teacher1 = applicationContext.getBean(Teacher.class);
         Teacher teacher2 = applicationContext.getBean(Teacher.class);
         log.info("teacher1==teacher2:{}", teacher1 == teacher2);
+
+        log.info("teacher{}", teacher1);
     }
 }
